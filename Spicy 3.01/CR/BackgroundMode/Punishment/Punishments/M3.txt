@@ -87,7 +87,7 @@ I want you to count the number of commands I give in your head #DT4
 Everytime you hear a command I want you say "Thank You #DomHonorific " #DT4
 Lastly I want you to count everytime your heel strikes the floor or you loose your balance.. #DT4
 If both heels strikes at the same time it counts as two! #DT4
-I never said this would be easy #GNMLol #DT4 @SetVar[CornerTimeCommands]=[0] 
+I never said this would be easy #GNMLol #DT4 @SetVar[CornerCommandsGiven]=[0] 
 Now go to the corner, stand on your toes and dont return before you hear the bell! #DT4 @TempFlag(CornerTimeDown) @Wait(5)
 (CornerTime2)
 @NullResponse @PlayAudio[\GNMSounds\Punishment\Corner\OnYourToes.mp3] @CountVar[CornerTimeCounter2]
