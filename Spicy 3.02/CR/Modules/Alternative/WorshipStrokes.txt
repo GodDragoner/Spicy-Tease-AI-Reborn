@@ -3,7 +3,7 @@
 @RT(And what better way than..,And how could it be done any better than,And I can't think of anything better than..) #DT @Goto(a,b,c)
 (a)
 Edging! #DT @SetVar[EdgesToGo]=[0]
-@RT(While adoring my perfection!,While looking at my lovely forms!,While enjoying me!,And at the same time has your eyes on me!) #DT @ChangeVar[EdgesToGo]=[EdgesToGo]+[#Random(10,30)]
+@RT(While adoring my perfection!,While looking at my lovely forms!,While enjoying me!,And at the same time has your eyes on me!) #DT @ChangeVar[EdgesToGo]=[EdgesToGo]+[#Random(8,25)]
 You'll be edging over and over again! #DT
 (Edge)
 @Edge #GNMEdge #DT
