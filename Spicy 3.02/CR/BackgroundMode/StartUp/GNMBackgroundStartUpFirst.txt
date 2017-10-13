@@ -5,7 +5,7 @@
 [no]@SystemMessage Return when you have sufficient time.. @ShowImage[\GNMImages\Intro\GNMLoading.*] @Goto(End)
 @DifferentAnswer @SystemMessage Yes or no? @ShowImage[\GNMImages\Intro\GNMLoading.*]
 (End)
-@SystemMessage Exiting.. - Return when you have time @DeleteFlag(SpicyIntro) @ShowImage[\GNMImages\Intro\GNMLoading.*] @EndTease
+@SystemMessage Exiting.. - Return when you have time @ShowImage[\GNMImages\Intro\GNMLoading.*] @EndTease
 @End
 (Sub3.0)
 @SystemMessage Setting up @ShowImage[\GNMImages\Intro\GNMLoading.*]
@@ -529,7 +529,7 @@
 @NullResponse @SetVar[DommeContentVAnnoyed]=[50]
 @NullResponse @SetVar[DommeContentAnnoyed]=[300]
 (MoveOn2)
-@SystemMessage #VANC #VANP Well..
+@SystemMessage #VANC #VANP Well.. @SetFlag(SpicyIntro)
 @SystemMessage #VANC #VANP #DomHonorific #DomName just texted me
 @SystemMessage #VANC #VANP She wants to meet you.. 
 @SystemMessage #VANC #VANP ...Transfering Session... @UnlockImages @CallReturn(CR\BackgroundMode\StartUp\GNMFirstMeeting.txt)
