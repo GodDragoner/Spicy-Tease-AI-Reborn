@@ -12,7 +12,7 @@ When was the first example of nylon produced? #DT
 [3]Correct.. #DT @ChangeVar[AcademyRight]=[AcademyRight]+[1] @Goto(End)
 @DifferentAnswer 1, 2 or 3? #DT
 (Late1)
-@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3ChatPC) Nr 3 Miss. @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
+@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3Chat) Nr 3 Miss. @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
 Correct! @ChangeVar[AcademyWrong]=[AcademyWrong]+[1] #DT @Goto(End)
 (3ab)
 When was the first example of nylon produced? #DT
@@ -22,7 +22,7 @@ When was the first example of nylon produced? #DT
 [3]Correct.. #DT @ChangeVar[AcademyRight]=[AcademyRight]+[1] @Goto(End)
 @DifferentAnswer 1, 2 or 3? #DT
 (Late2)
-@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3ChatPC) Nr 3 Miss. @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
+@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3Chat) Nr 3 Miss. @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
 Correct! @ChangeVar[AcademyWrong]=[AcademyWrong]+[1] #DT @Goto(End)
 (3b)
 @NullResponse @PlayVideo[GNM_Videos\Academy\Lingerie\Class1\NylonStockings.mp4]
@@ -35,7 +35,7 @@ When was the first example of nylon produced? #DT
 [3]Correct.. #DT @ChangeVar[AcademyRight]=[AcademyRight]+[1] @Goto(End)
 @DifferentAnswer 1, 2 or 3? #DT
 (Late3)
-@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3ChatPC) Nr 3 Miss. @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
+@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3Chat) Nr 3 Miss. @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
 Correct! @ChangeVar[AcademyWrong]=[AcademyWrong]+[1] #DT @Goto(End)
 (3bb)
 When was the first example of nylon produced? #DT
@@ -45,7 +45,7 @@ When was the first example of nylon produced? #DT
 [3]Correct.. #DT @ChangeVar[AcademyRight]=[AcademyRight]+[1] @Goto(End)
 @DifferentAnswer 1, 2 or 3? #DT
 (Late4)
-@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3ChatPC) Nr 3 Miss. #DT @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
+@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3Chat) Nr 3 Miss. #DT @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
 Correct! #DT @ChangeVar[AcademyWrong]=[AcademyWrong]+[1] @Goto(End)
 (3c)
 @NullResponse @PlayVideo[GNM_Videos\Academy\Lingerie\Class1\Silk.mp4]
@@ -58,7 +58,7 @@ When was the first example of nylon produced? #DT
 [3]Correct.. #DT @ChangeVar[AcademyRight]=[AcademyRight]+[1] @Goto(End)
 @DifferentAnswer 1, 2 or 3? #DT
 (Late5)
-@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3ChatPC) Nr 3 Miss. #DT @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
+@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3Chat) Nr 3 Miss. #DT @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
 Correct! #DT @ChangeVar[AcademyWrong]=[AcademyWrong]+[1] @Goto(End)
 (3cb)
 When was the first example of nylon produced? #DT
@@ -68,7 +68,7 @@ When was the first example of nylon produced? #DT
 [3]Correct.. #DT @ChangeVar[AcademyRight]=[AcademyRight]+[1] @Goto(End)
 @DifferentAnswer 1, 2 or 3? #DT
 (Late6)
-@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3ChatPC) Nr 3 Miss. #DT @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
+@RT(#SlaveF1Chat,#SlaveF2Chat,#SlaveF3Chat,#SlaveM1Chat,#SlaveM2Chat,#SlaveM3Chat) Nr 3 Miss. #DT @ChangeVar[AcademyWrong]=[AcademyWrong]+[1]
 Correct! #DT @ChangeVar[AcademyWrong]=[AcademyWrong]+[1] @Goto(End)
 (End)
 @End
