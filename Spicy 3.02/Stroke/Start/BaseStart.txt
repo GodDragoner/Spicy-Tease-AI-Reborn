@@ -4,7 +4,7 @@
 @Flag(CrazyDommeMode) @NullResponse @CallReturn(CR\BackgroundMode\StartUp\CrazyDommeMode.txt)
 @NullResponse @CallReturn(CR\BackgroundMode\StartUp\GNMSetMood.txt)
 (PlayIntro) //First launch? Check below
-@NullResponse @CheckFlag(SpicyIntro) @SetFlag(SpicyIntro)
+@NullResponse @CheckFlag(SpicyIntro)
 @NullResponse @TempFlag(Assistant)
 @NullResponse @TempFlag(Busy)
 @NullResponse @CallReturn(CR\BackgroundMode\StartUp\GNMBackgroundStartUpFirst.txt)
