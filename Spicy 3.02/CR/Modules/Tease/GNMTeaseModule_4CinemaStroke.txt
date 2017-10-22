@@ -1,7 +1,7 @@
 #SlaveName #DT
 I have a memory game for us #DT
 I will show you 12 out of 13 cards from a deck of cards #DT
-Meaning I might show you the ace(1), two(2), three(3), four(4), five(5), seven(7), eight(8), nine(9), ten(10), knight(11), queen(12) and king(13) #DT
+Meaning I might show you the ace(1)(1), two(2), three(3), four(4), five(5), seven(7), eight(8), nine(9), ten(10), knight(11), queen(12) and king(13) #DT
 What card was missing #DT
 It was the "6" #DT
 It doesn't matter if the card is clubs, hearts, spades or diamonds #DT
@@ -397,14 +397,14 @@ Lets begin.. #DT @SetVar[Right]=[0]
 @NotFlag(Card11) @NullResponse @ShowImage[\GNMImages\Deck\a11\*.png] @ChangeVar[CardValue]=[CardValue]-[11] @SetFlag(Card11) @Goto(ChoosePot2)
 @NotFlag(Card12) @NullResponse @ShowImage[\GNMImages\Deck\a12\*.png] @ChangeVar[CardValue]=[CardValue]-[12] @SetFlag(Card12) @Goto(ChoosePot2)
 (Guess)
-<Font color="yellow">Answer?</Font> @InputVar[CardChosen] @Timeout(7, Failed)
+<Font color="orange">Answer?</Font> @InputVar[CardChosen] @Timeout(7, Failed)
 @Variable[CardChosen]=[CardValue] @SystemMessage <Font color="green">Correct!</Font> @ChangeVar[Right]=[Right]+[1] 
-@Variable[CardChosen]=[CardValue] @NullResponse @If[Right]>[7]Then(Reward) @Wait(5) @Goto(Setup)
+@Variable[CardChosen]=[CardValue] @NullResponse @If[Right]>=[7]Then(Reward) @Wait(5) @Goto(Setup)
 @Variable[CardChosen]<>[CardValue] @SystemMessage <Font color="red">Incorrect!</Font> @ChangeVar[Wrong]=[Wrong]+[1] 
-@Variable[CardChosen]<>[CardValue] @NullResponse @If[Wrong]>[7]Then(Wrong) @Wait(5) @Goto(Setup)
+@Variable[CardChosen]<>[CardValue] @NullResponse @If[Wrong]>=[7]Then(Wrong) @Wait(5) @Goto(Setup)
 (Failed)
 @Variable[CardChosen]<>[CardValue] @SystemMessage <Font color="red">Too slow</Font> @ChangeVar[Wrong]=[Wrong]+[1] 
-@NullResponse @If[Wrong]>[7]Then(Wrong) @Wait(5) @Goto(Setup)
+@NullResponse @If[Wrong]>=[7]Then(Wrong) @Wait(5) @Goto(Setup)
 (Reward)
 That was 7 right! #DT
 So here is 150 gold #DT @ChangeVar[GNMGold]=[GNMGold]+[150]

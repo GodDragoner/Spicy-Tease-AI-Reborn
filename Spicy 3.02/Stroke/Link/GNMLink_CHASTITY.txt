@@ -1,25 +1,2 @@
-@NullResponse @StopStroking
-@NullResponse @RapidCodeOn
-@NullResponse @DeleteFlag(Busy)
-@Variable[#DateDifference(Devotion, Minutes)]>=[DevotionSet] @NullResponse @Goto(End)
-@NullResponse @DeleteFlag(VPleased)
-@NullResponse @DeleteFlag(Pleased)
-@NullResponse @DeleteFlag(Neutral)
-@NullResponse @DeleteFlag(Annoyed)
-@NullResponse @DeleteFlag(VAnnoyed)
-@Variable[GNMMerits]>[1000] @NullResponse @SetVar[GNMMerits]=[1000]
-@Variable[GNMMerits]<[1] @NullResponse @SetVar[GNMMerits]=[1]
-@Variable[GNMMerits]>=[DommeContentVPleased] @NullResponse @SetFlag(VPleased) @Goto(Continue1)
-@Variable[GNMMerits]>=[DommeContentPleased] @NullResponse @SetFlag(Pleased) @Goto(Continue1)
-@Variable[GNMMerits]<=[DommeContentVAnnoyed] @NullResponse @SetFlag(VAnnoyed) @Goto(Continue1)
-@Variable[GNMMerits]<=[DommeContentAnnoyed] @NullResponse @SetFlag(Annoyed) @Goto(Continue1)
-@NullResponse @SetFlag(Neutral)
-(Continue1)
-@Variable[GNMMerits]<[DommeContentVAnnoyed] @NullResponse @ChangeVar[GNMMerits]=[GNMMerits]+[#Random(20,50)]
-@Variable[GNMMerits]>[DommeContentVPleased] @NullResponse @ChangeVar[GNMMerits]=[GNMMerits]-[#Random(20,50)]
-@Flag(ChastityIsOn) @NullResponse @Goto(Locked)
-(Locked)
-@RT(Time to tease your lock up #GNMCock,Lets make it twitch #GNMGrin,I have a fun chastity exercise!,You're absolutely gonna hate this!) #DT @StartTaunts
+@CallReturn(CR\Link\GNMLink_CHASTITY.txt)
 @End
-(End)
-@NullResponse @Interrupt(GNMEnd)
