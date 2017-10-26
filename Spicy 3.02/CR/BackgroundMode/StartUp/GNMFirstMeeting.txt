@@ -145,14 +145,8 @@ Very rare, rare, semi rare, somewhat rare or just leave it completely up to me? 
 [you,up to you,your choice]#GNMGood #DT4 @SetFlag(DommeO)
 @DifferentAnswer Very rare, rare, semi rare, somewhat rare or up to me? #DT4
 Now you can go ahead and jerk off... #DenialLevel #DT4 @SetFlag(SpicyIntro) @DeleteFlag(HalfFinish)
-When you're done with that #DT4 @CheckFlag(HasChastity)
+When you're done with that #DT4
 I want you to put your #GNMCock away.. #DT4
 Enjoy #DT4
 See you tomorrow #DT4 @EndTease
-@End
-(HasChastity)
-After that I want you to lock up your #GNMCock in its chastity belt #GNMGrin #DT4
-Enjoy slave! @SetFlag(ChastityIsOn) @ChastityOn #DT4
-See you tomorrow #DT4 
-@EndTease
 @End
