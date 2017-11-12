@@ -20,7 +20,7 @@
 (Continue1)
 @Variable[GNMMerits]<[DommeContentVAnnoyed] @NullResponse @ChangeVar[GNMMerits]=[GNMMerits]+[#Random(20,50)]
 @Variable[GNMMerits]>[DommeContentVPleased] @NullResponse @ChangeVar[GNMMerits]=[GNMMerits]-[#Random(20,50)]
-@NullResponse @Chance100(Links) @Goto(Other)
+@NullResponse @Chance10(Links) @Goto(Other)
 (Links)
 @NullResponse @CallReturn(CR\Links\*.txt)
 (Other)
