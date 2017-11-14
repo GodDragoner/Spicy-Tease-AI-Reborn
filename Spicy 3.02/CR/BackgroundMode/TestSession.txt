@@ -25,6 +25,9 @@
 (StartSession2)
 @NullResponse @SetDate(TeaseSession,0 Hours) @Interrupt(GNMStart)
 (End)
+@NullResponse @Flag(HasChastity,ChastityIsOn) @ChastityOn
+@NullResponse @NotFlag(ChastityIsOn) @ChastityOff
+@NullResponse @NotFlag(HasChastity) @ChastityOff
 @End
 
 
