@@ -1,4 +1,4 @@
-@Stroking #GNMStopStroking @StopStroking
+@Stroking #StopStroking @StopStroking
 @NullResponse @CheckFlag(gdAnal)
 @NullResponse @CheckFlag(gdAnal_No)
 Oh really? #DT

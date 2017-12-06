@@ -1,4 +1,4 @@
-#GNMStopStroking #DT @StopStroking
+#StopStroking #DT @StopStroking
 @NullResponse @PlayAudio[\GNMSounds\NoSound.mp3]
 
 

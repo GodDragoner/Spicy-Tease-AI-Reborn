@@ -1,10 +1,10 @@
-#GNMStopStroking #DT @StopStroking
+#StopStroking #DT @StopStroking
 @NullResponse @PlayAudio[\GNMSounds\NoSound.mp3]
 @RT(We're gonna do a few edges!,Lets edge that cock a bit!,Time for a little bit of edging!) #DT
 (Edge)
 #GNMEdge #DT @Edge
 #GNMLetTheEdgeFade #DT @Wait(#Random(5,15))
-@NullResponse @Chance20(End) @Goto(Edge)
+@NullResponse @Chance24(End) @Goto(Edge)
 (End)
 #GNMStartStroking #DT
 @End

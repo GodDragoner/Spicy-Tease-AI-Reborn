@@ -63,7 +63,7 @@ Vocabulary:
 #GNMLol -> Laughing
 #GNMMoan -> Moaning
 #GNMLetTheEdgeFade -> Let the edge fade
-#GNMStopStroking -> Stop stroking
+#StopStroking -> Stop stroking
 #GNMStartStroking -> Start stroking
 #GNMYesOrNo -> Yes or no question
 #Grin -> Just some grin expression
@@ -139,7 +139,7 @@ General:
 #TODO: EdgeATon: let domme decide how many edges you want to do
 #TODO: Fix play sound keep stroking stopping the stroking metronome
 #TODO: Small punishment (more hits and variety)
-#TODO: No edge sound and vocab error where #GNMStopStrokingEdge is called CR\Stroking\QuickEdge.txt, #HoldTheEdge vocab error too
+#TODO: No edge sound and vocab error where #StopStrokingEdge is called CR\Stroking\QuickEdge.txt, #HoldTheEdge vocab error too
 #TODO: Move other stroke taunt files to own file too same as start stroking.
 #TODO: Force greeting domme
 #TODO: Ignore links after start and go to strokig directly

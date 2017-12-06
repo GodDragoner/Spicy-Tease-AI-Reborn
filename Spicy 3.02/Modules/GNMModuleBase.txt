@@ -1,4 +1,4 @@
-#GNMStopStroking @StopStroking #DT
+#StopStroking @StopStroking #DT
 @Variable[#DateDifference(Devotion, Minutes)]>[DevotionSet] @NullResponse @Goto(EndSession)
 @NullResponse @RapidCodeOn
 @NullResponse @DeleteFlag(NoStrokeEdge)
