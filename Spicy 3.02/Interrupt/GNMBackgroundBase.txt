@@ -17,7 +17,7 @@
 [dungeon,spanking,spankzchoir,selfbondage,bad,naugthy,discipline,pain,torture,chamber] @NullResponse @CallReturn(CR\BackgroundMode\Punishment\PunishmentBase.txt)
 [punishment,punish] @NullResponse @TempFlag(Punishment) @CallReturn(CR\BackgroundMode\Punishment\PunishmentBase.txt)
 [setting,settings,calibrate,adjust,setup] @NullResponse @CallReturn(CR\Settings\SettingsBase.txt)
-[shop,buy,purchase,spent,gold,spend,bought] @NullResponse @CallReturn(CR\BackgroundMode\Shop\ShopMain.txt)
+[shop,buy,purchase,spent,gold,spend,bought,store] @NullResponse @CallReturn(CR\BackgroundMode\Shop\ShopMain.txt)
 [fitness,health] @NullResponse @CallReturn(CR\Exercise\ExerciseBase.txt)
 [report,exercise] @NullResponse @Goto(ReportE)
 [work,study,mode] @NullResponse @CallReturn(CR\BackgroundMode\WorkMode\GNMWorkMode.txt)
@@ -38,7 +38,7 @@
 @SystemMessage #VANC #VANP Report for exercise
 @SystemMessage #VANC #VANP Work / Study mode
 @SystemMessage #VANC #VANP Request to view the rules 
-@SystemMessage #VANC #VANP Enable fast answer mode (I will respond quicker)
+@SystemMessage #VANC #VANP Enable fast answer mode() (I will respond quicker)
 @SystemMessage #VANC #VANP Or save and leave the Programm @Goto(Base)
 (ReportE)
 @Variable[#DateDifference(JustE, Hours)]<[10] @SystemMessage #VANC #VANP You just reported that you completed an exericse.. @Goto(NotStupid)

@@ -218,7 +218,7 @@ Put them put in #GNMGrin #DT @Wait(10)
 #Fetch #ButtPlug #DT
 #Fetch #Gag #DT
 Put both of them in #DT
-And finally #Fetch #Random(4,8) #Pegs #DT @Wait(5)
+And finally #Fetch #Random(4,8) pegs #DT @Wait(5)
 I wanted placed on your nipples #DT @Wait(10)
 #GNMReady #DT
 [yes]#GNMGood #DT @Goto(c1)
@@ -226,7 +226,7 @@ I wanted placed on your nipples #DT @Wait(10)
 (b4)//gag + peg
 @NotFlag(GagPlay) @NullResponse @Goto(UseToy) 
 #Fetch #Gag #DT
-#Fetch #Random(4,8) #Pegs #DT @Wait(5)
+#Fetch #Random(4,8) pegs #DT @Wait(5)
 Gag yourself #DT
 And put the pegs on your nipples #DT @Wait(10)
 #GNMReady #DT
@@ -240,7 +240,7 @@ And put the pegs on your nipples #DT @Wait(10)
 Gag yourself #DT
 The parachute goes on your #GNMBalls #DT
 I want you to hang #Random(1,3) kg's from it #GNMLol #DT
-#Fetch #Random(4,8) #Pegs #DT @Wait(5)
+#Fetch #Random(4,8) pegs #DT @Wait(5)
 Place the pegs on your nipples #DT @Wait(10)
 #GNMReady #DT
 [yes]#GNMGood #DT @Goto(c4)
@@ -277,7 +277,7 @@ Place them where you will do the position.. #DT
 [yes]#GNMGood #DT @Goto(c9,c16)
 @DifferentAnswer Just say yes when you're ready.. #DT #MeritChangeNLow
 (b10)//rice + peg
-#Fetch #Random(4,8) #Pegs and some rice #DT @Wait(5)
+#Fetch #Random(4,8) pegs and some rice #DT @Wait(5)
 Put the pegs on your nipples and place the rice where you will do the position.. #DT @Wait(10)
 #GNMReady #DT
 [yes]#GNMGood #DT @Goto(c5)
