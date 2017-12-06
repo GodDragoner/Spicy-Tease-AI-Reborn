@@ -1,6 +1,6 @@
 @NullResponse @CheckStrokingState
 (Sub Stroking)
-#GNMStopStroking #DT @StopStroking
+#StopStroking #DT @StopStroking
 (Sub Not Stroking)
 @NullResponse @CheckFlag(gdPunNotFirst)
 It was inevitable, wasn't it? #DT @SetFlag(gdPunNotFirst)

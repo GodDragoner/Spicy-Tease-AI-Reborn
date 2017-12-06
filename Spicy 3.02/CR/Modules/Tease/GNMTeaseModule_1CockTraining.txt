@@ -41,7 +41,7 @@ When you hear the pace you stroke it to the beat #DT
 @NullResponse @ShowImage @Wait(5)
 @NullResponse @ShowImage @Wait(5)
 @NullResponse @ShowImage @Wait(5)
-#GNMStopStroking #DT
+#StopStroking #DT
 #GNMEdge @EdgeNoHold @ShowImage
 #GNMLetTheEdgeFade #DT @ChangeVar[EdgeCount]=[EdgeCount]+[1] @Wait(#Random(3,7))
 @NullResponse @CustomMode(first edge, Goto, FirstEdge) @SetVar[TimeToIncreaseLevel]=[0]

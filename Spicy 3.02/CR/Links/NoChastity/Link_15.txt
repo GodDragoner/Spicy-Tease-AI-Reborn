@@ -17,7 +17,7 @@ Damn she's hot, isn't she?
 @End
 (pvLink15A)
 #GNMStartStroking #DT @Wait(6)
-#GNMStopStroking #DT @DeleteFlag(pvLink15A) 
+#StopStroking #DT @DeleteFlag(pvLink15A) 
 Aww just when you were getting into it #DT @Chance50(sometimes I think)
 Well, too bad #DT
 #ThatsAllForToday #DT
