@@ -11,7 +11,7 @@
 @NullResponse @Flag(ShopUnlockAll) @CallReturn(CR\BackgroundMode\Shop\UnlockAll.txt)
 @RapidCodeOn @SystemMessage 100% loaded @ShowImage[\GNMImages\Punishment\Grounding\BlackBase.*]
 (PlayIntro) //First launch? Check below
-@NullResponse @RapidCodeOn @CheckFlag(SpicyIntro)
+@NullResponse @CheckFlag(SpicyIntro)
 @NullResponse @TempFlag(Assistant)
 @NullResponse @TempFlag(Busy)
 @NullResponse @CheckFlag(HalfFinish)
