@@ -9,7 +9,7 @@
 @Variable[ChastityLevel]>=[5] @RT(You should wear the,You need to wear the) #Cage for at least @ShowVar[RandomNumber] hours #DT @Goto(Sleep)
 @Variable[ChastityLevel]>=[3] @NullResponse @SetVar[RandomNumber]=[#Random(2,5)]
 @Variable[ChastityLevel]>=[3] @RT(You should wear the,You need to wear the) #Cage for at least @ShowVar[RandomNumber] hours #DT @Goto(Sleep)
-@Variable[ChastityLevel]>=[3] @NullResponse @SetVar[RandomNumber]=[#Random(1,3)]
+@Variable[ChastityLevel]>=[1] @NullResponse @SetVar[RandomNumber]=[#Random(1,3)]
 @Variable[ChastityLevel]>=[1] @RT(You should try to wear the,You should really try to wear the) #Cage for at least @ShowVar[RandomNumber] hours #DT @Goto(Sleep)
 (Sleep)
 @Variable[ChastityLevel]<[20] It's okay if you can't sleep in it #DT
