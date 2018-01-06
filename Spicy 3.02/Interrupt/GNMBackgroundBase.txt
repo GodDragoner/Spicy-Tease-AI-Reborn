@@ -12,7 +12,6 @@
 @Flag(LotteryTicket) @Variable[#DateDifference(LotteryTicketTimer, Days)]>=[LotteryTicketCount] @NullResponse @CallReturn(CR\BackgroundMode\Shop\LTicket.txt)
 (Base)
 @SystemMessage #VANC #VANP #Welcome
-(NoWelcome)
 [session,domme,visit,go to] @NullResponse @CallReturn(CR\BackgroundMode\TestSession.txt)
 [chore,chores,clean,cleaning,dust off,dusting,dust,wipe,wash] @NullResponse @TempFlag(Chore) @CallReturn(CR\BackgroundMode\Chores\ChoreBase.txt)
 [dungeon,spanking,spankzchoir,selfbondage,bad,naugthy,discipline,pain,torture,chamber] @NullResponse @CallReturn(CR\BackgroundMode\Punishment\PunishmentBase.txt)
@@ -53,9 +52,9 @@
 (NotStupid)
 @SystemMessage #VANC #VANP I'm not stupid slave.. #MeritChangeNHigh @Goto(Base)
 (FastAnswerMode)
-@SystemMessage #VANC #VANP Fast answer mode is now deactivated. @DeleteFlag(FastAnswerMode) @Goto(NoWelcome)
+@SystemMessage #VANC #VANP Fast answer mode is now deactivated. @DeleteFlag(FastAnswerMode) @Goto(Base)
 (FastAnswerModeActivate)
-@SystemMessage #VANC #VANP Fast answer mode is now activated. @TempFlag(FastAnswerMode) @Goto(NoWelcome)
+@SystemMessage #VANC #VANP Fast answer mode is now activated. @TempFlag(FastAnswerMode) @Goto(Base)
 
 ########################## - Comment - ##########################
 #Main screen that waits for commands
