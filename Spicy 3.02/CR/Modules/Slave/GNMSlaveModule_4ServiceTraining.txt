@@ -206,16 +206,22 @@ Good! #DT #MeritChangePLow
 @RT(I need you to,Right now you have to) measure the amount of water left #DT @Wait(40)
 (Continue4)
 So tell me #SlaveName #DT
-How much water is there left in mL? #DT @InputVar[SumOfWater2]
-@NullResponse @ChangeVar[SumOfWater2]=[SumOfWater2]*[100]
+How much water in total is there left in mL? #DT @InputVar[SumOfWater2]
+@NullResponse @If[SumOfWater2]>[SumOfWater]Then(Bad2)
+@NullResponse @RapidCodeOn @ChangeVar[SumOfWater2]=[SumOfWater2]*[100]
 @NullResponse @ChangeVar[SumOfWater2]=[SumOfWater2]/[SumOfWater]
-@NullResponse @If[SumOfWater2]>=[25] @NullResponse @Goto(Bad1)
+@NullResponse @ChangeVar[SumOfWater2]=[100]-[SumOfWater2]
 You lost @ShowVar[SumOfWater2] % water #DT
+@NullResponse @If[SumOfWater2]>=[25]Then(Bad1)
 Which I can tolerate.. #DT @Goto(Continue3)
 (Bad1)
-You lost @ShowVar[SumOfWater2] % water #DT
 Which is way above acceptable #SlaveName! #DT #MeritChangeNHigh
-Do. Better. #DT
+Do. Better. #DT 
+@End
+(Bad2)
+You can not have more water as your start value @ShowVar[SumOfWater]. 
+Dirty cheater! 
+You earn some punishment points. @ChangeVar[GNMPPoints]=[GNMPPoints]+[100]
 (Continue3)
 @End
 
