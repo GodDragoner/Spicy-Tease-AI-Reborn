@@ -315,22 +315,22 @@
 @DifferentAnswer First, second or the same? #DT
 (True1)
 @RT(Correct!,Right on,Right on!,You're right,You are right!,That's correct,That's right) #DT
-#BlackJack1 #DT @If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
+@If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
 (False1)
 @RT(Wrong!,Not correct,Incorrect,You're wrong,You are wrong,That's simply incorrect) #DT
-#BlackJack2 #DT @If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
+@If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
 (True2)
 @RT(Correct!,Right on,Right on!,You're right,You are right!,That's correct,That's right) #DT
-#BlackJack3 #DT @If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
+@If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
 (False2)
 @RT(Wrong!,Not correct,Incorrect,You're wrong,You are wrong,That's simply incorrect) #DT
-#BlackJack4 #DT @If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
+@If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
 (True3)
 @RT(Correct!,Right on,Right on!,You're right,You are right!,That's correct,That's right) #DT
-#BlackJack5 #DT @If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
+@If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
 (False3)
 @RT(Wrong!,Not correct,Incorrect,You're wrong,You are wrong,That's simply incorrect) #DT
-#BlackJack6 #DT @If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
+@If[Rounds]>[10]Then(End) @ChangeVar[Rounds]=[Rounds]+[1] @Chance85(Setup) @Goto(Another)
 (End)
 We're at an end! #GNMGrin #DT
 I hope you had fun! #SlaveName #DT
