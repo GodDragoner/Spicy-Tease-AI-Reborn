@@ -1,4 +1,4 @@
-@NullResponse @SetVar[Rounds]=[0]
+@NullResponse @SetVar[Rounds]=[0] @Goto(Choose)
 (Another)
 @RT(Lets do another,One more,Lets try another one,Lets do it once again!) #DT
 (Choose)
@@ -404,12 +404,12 @@
 @Variable[Model100Value]=[Temp] @NullResponse @Goto(Correct)
 @Variable[Model100Value]<>[Temp] @NullResponse @Goto(Wrong)
 (Correct)
-@RT(Correct,Correct!,That is correct!,Wauv you guessed it,Believe it or not that was correct,Right,Right on,Well correct,Well right on) #DT 
-@NullResponse @ChangeVar[Rounds]=[Rounds]+[1]
+@RT(Correct,Correct!,That is correct!,Wow you guessed it,Believe it or not that was correct,Right,Right on,Well correct,Well right on) #DT 
+@NullResponse @ChangeVar[Rounds]=[Rounds]+[1] @Goto(Another)
 @Variable[Rounds]>[5] @NullResponse @Goto(End)
 (Wrong)
 @RT(Wrong,Wrong!,Incorrect,Thats wrong,That's wrong,That is wrong,Which is incorrect,That isn't correct,Nope it's not right,Nope,Not right,Not correct) #DT 
-@NullResponse @ChangeVar[Rounds]=[Rounds]+[1]
+@NullResponse @ChangeVar[Rounds]=[Rounds]+[1] @Goto(Another)
 @Variable[Rounds]>[5] @NullResponse @Goto(End)
 (End)
 We're at an end! #GNMGrin #DT
