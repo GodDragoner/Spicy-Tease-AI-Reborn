@@ -316,6 +316,7 @@
 @SystemMessage #VANC #VANP The price for a ticket is @ShowVar[LotteryTicketShopPrice] gold @Goto(EnterCode)
 
 (e1) // Chore Pack 1-4
+@Variable[ChoresBought]>=[4] @Goto(SoldOut)
 @NullResponse @CallReturn(CR\BackgroundMode\Shop\9-Chores.txt)
 @NullResponse @Goto(EnterCode)
 (e1h) // Chore Pack 1-4
