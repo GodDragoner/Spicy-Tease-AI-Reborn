@@ -1,20 +1,39 @@
 (ShopList)
-@NullResponse @RapidCodeOn @SetVar[TreasuerChestShopPrice]=[100]
-@NullResponse @SetVar[PayTributeShopPrice]=[500]
-@NullResponse @SetVar[DoublePayTributeShopPrice]=[1000]
-@NullResponse @SetVar[MoodboosterShopPrice]=[1000]
-@NullResponse @SetVar[AtonementShopPrice]=[2]
-@NullResponse @SetVar[UnlockDenailShopPrice]=[2000]
-@NullResponse @SetVar[ChastityPackShopPrice]=[500]
-@NullResponse @SetVar[HumilationPackShopPrice]=[500]
-@NullResponse @SetVar[PainPackShopPrice]=[500]
-@NullResponse @SetVar[SlavePackShopPrice]=[500]
-@NullResponse @SetVar[TeasePackShopPrice]=[500]
-@NullResponse @SetVar[ChorePackShopPrice]=[500]
-@NullResponse @SetVar[EndGamesPackShopPrice]=[750]
-@NullResponse @SetVar[SpankingImplementPackShopPrice]=[500]
-@NullResponse @SetVar[GlitterModuleShopPrice]=[1500]
-@NullResponse @SetVar[LotteryTicketShopPrice]=[50]
+@NullResponse @RapidCodeOn @SetFlag(ShopPricesSet)
+@NullResponse @CheckFlag(TreasureChestShopPriceOffer) @SetVar[TreasureChestShopPrice]=[100] @SetVar[TreasureChestShopPriceOriginal]=[TreasureChestShopPrice]
+(TreasureChestShopPriceOffer)
+@NullResponse @CheckFlag(PayTributeShopPriceOffer) @SetVar[PayTributeShopPrice]=[500] @SetVar[PayTributeShopPriceOriginal]=[PayTributeShopPrice]
+(PayTributeShopPriceOffer)
+@NullResponse @CheckFlag(DoublePayTributeShopPriceOffer) @SetVar[DoublePayTributeShopPrice]=[1000] @SetVar[DoublePayTributeShopPriceOriginal]=[DoublePayTributeShopPrice]
+(DoublePayTributeShopPriceOffer)
+@NullResponse @CheckFlag(MoodboosterShopPriceOffer) @SetVar[MoodboosterShopPrice]=[1000] @SetVar[MoodboosterShopPriceOriginal]=[MoodboosterShopPrice]
+(MoodboosterShopPriceOffer)
+@NullResponse @CheckFlag(AtonementShopPriceOffer) @SetVar[AtonementShopPrice]=[2] @SetVar[AtonementShopPriceOriginal]=[AtonementShopPrice]
+(AtonementShopPriceOffer)
+@NullResponse @CheckFlag(UnlockDenailShopPriceOffer) @SetVar[UnlockDenailShopPrice]=[2000] @SetVar[UnlockDenailShopPriceOriginal]=[UnlockDenailShopPrice]
+(UnlockDenailShopPriceOffer)
+@NullResponse @CheckFlag(ChastityPackShopPriceOffer) @SetVar[ChastityPackShopPrice]=[500] @SetVar[ChastityPackShopPriceOriginal]=[ChastityPackShopPrice]
+(ChastityPackShopPriceOffer)
+@NullResponse @CheckFlag(HumilationPackShopPriceOffer) @SetVar[HumilationPackShopPrice]=[500] @SetVar[HumilationPackShopPriceOriginal]=[HumilationPackShopPrice]
+(HumilationPackShopPriceOffer)
+@NullResponse @CheckFlag(PainPackShopPriceOffer) @SetVar[PainPackShopPrice]=[500] @SetVar[PainPackShopPriceOriginal]=[PainPackShopPrice]
+(PainPackShopPriceOffer)
+@NullResponse @CheckFlag(SlavePackShopPriceOffer) @SetVar[SlavePackShopPrice]=[500] @SetVar[SlavePackShopPriceOriginal]=[SlavePackShopPrice]
+(SlavePackShopPriceOffer)
+@NullResponse @CheckFlag(TeasePackShopPriceOffer) @SetVar[TeasePackShopPrice]=[500] @SetVar[TeasePackShopPriceOriginal]=[TeasePackShopPrice]
+(TeasePackShopPriceOffer)
+@NullResponse @CheckFlag(LotteryTicketShopPriceOffer) @SetVar[LotteryTicketShopPrice]=[50] @SetVar[LotteryTicketShopPriceOriginal]=[LotteryTicketShopPrice]
+(LotteryTicketShopPriceOffer)
+@NullResponse @CheckFlag(ChorePackShopPriceOffer) @SetVar[ChorePackShopPrice]=[500] @SetVar[ChorePackShopPriceOriginal]=[ChorePackShopPrice]
+(ChorePackShopPriceOffer)
+@NullResponse @CheckFlag(EndGamesPackShopPriceOffer) @SetVar[EndGamesPackShopPrice]=[750] @SetVar[EndGamesPackShopPriceOriginal]=[EndGamesPackShopPrice]
+@CheckFlag(EndGamesPackShopPriceOffer)
+@NullResponse @CheckFlag(SpankingImplementPackShopPriceOffer) @SetVar[SpankingImplementPackShopPrice]=[500] @SetVar[SpankingImplementPackShopPriceOriginal]=[SpankingImplementPackShopPrice]
+(SpankingImplementPackShopPriceOffer)
+@NullResponse @CheckFlag(SpankzChoirShopPriceOffer) @SetVar[SpankzChoirShopPrice]=[250] @SetVar[SpankzChoirShopPriceOriginal]=[SpankzChoirShopPrice]
+(SpankzChoirShopPriceOffer)
+@NullResponse @CheckFlag(GlitterModuleShopPriceOffer) @SetVar[GlitterModuleShopPrice]=[1500] @SetVar[GlitterModuleShopPriceOriginal]=[GlitterModuleShopPrice]
+(GlitterModuleShopPriceOffer)
 @SystemMessage #VANC #VANP #SlaveName the shop list is being printed..
 @SystemMessage #VANC #VANP When you're ready, input the purchase code
 @SystemMessage #VANC #VANP Input the purchase code + 'help' for information about the item like this:
@@ -24,7 +43,7 @@
 @SystemMessage #VANC #VANP You currently have @ShowVar[GNMGold] gold
 (Print)
 @NullResponse @RapidTextOn @RapidCodeOn
-@SystemMessage --a1-- Treasure chest --- @ShowVar[TreasuerChestShopPrice] gold
+@SystemMessage --a1-- Treasure chest --- @ShowVar[TreasureChestShopPrice] gold
 
 @SystemMessage --b1-- Pay Tribute --- @ShowVar[PayTributeShopPrice] gold
 @SystemMessage --b2-- Double Pay Tribute --- @ShowVar[DoublePayTributeShopPrice] gold
@@ -83,9 +102,9 @@
 (EndPrint)
 @NullResponse @RapidTextOff @RapidCodeOff
 (EnterCode)
-@SystemMessage #VANC #VANP Enter product code __ @InputVar[PCode]
+@SystemMessage #VANC #VANP Enter product code __ or exit@InputVar[PCode]
 @NullResponse @RapidCodeOn
-@Variable[PCode]==[a1] @NullResponse @If[GNMGold]<[TreasuerChestShopPrice]Then(Poor) @Goto(a1)
+@Variable[PCode]==[a1] @NullResponse @If[GNMGold]<[TreasureChestShopPrice]Then(Poor) @Goto(a1)
 @Variable[PCode]==[a1help] @NullResponse @Goto(a1h)
 @Variable[PCode]==[b1] @NullResponse @If[GNMGold]<[PayTributeShopPrice]Then(Poor) @Goto(b1)
 @Variable[PCode]==[b1help] @NullResponse @Goto(b1h)
@@ -115,7 +134,7 @@
 @Variable[PCode]==[f1help] @NullResponse @Goto(f1h)
 @Variable[PCode]==[g1] @NullResponse @If[GNMGold]<[SpankingImplementPackShopPrice]Then(Poor) @Goto(g1)
 @Variable[PCode]==[g1help] @NullResponse @Goto(g1h)
-@Variable[PCode]==[g2] @NullResponse @If[GNMGold]<[200]Then(Poor) @Goto(g2)
+@Variable[PCode]==[g2] @NullResponse @If[GNMGold]<[SpankzChoirShopPrice]Then(Poor) @Goto(g2)
 @Variable[PCode]==[g2help] @NullResponse @Goto(g2h)
 @Variable[PCode]==[h1] @NullResponse @If[GNMGold]<[GlitterModuleShopPrice]Then(Poor) @Goto(h1)
 @Variable[PCode]==[h1help] @NullResponse @Goto(h1h)
@@ -351,13 +370,13 @@
 @SystemMessage #VANC #VANP By default you have 3 spankings implements
 @SystemMessage #VANC #VANP But you can buy a fourth and fifth each costing @ShowVar[SpankingImplementPackShopPrice] gold @Goto(EnterCode)
 
-(g2) //SpankzChoir Subscribtion
-@SystemMessage #VANC #VANP Buying subscribtion @ChangeVar[GNMGold]=[GNMGold]-[250]
+(g2) //SpankzChoir Subscription
+@SystemMessage #VANC #VANP Buying subscription @ChangeVar[GNMGold]=[GNMGold]-[SpankzChoirShopPrice]
 @SystemMessage #VANC #VANP Transaction Complete @SetDate(SpankzChoirSubscribtion, 0 Days)
 @NullResponse @Goto(EnterCode)
-(g2h) //SpankzChoir Subscribtion
+(g2h) //SpankzChoir Subscription
 @SystemMessage #VANC #VANP SpankzChoir is a place where you can sell your ass for a spanking
-@SystemMessage #VANC #VANP A 30 day subscribtion is 250 gold @Goto(EnterCode)
+@SystemMessage #VANC #VANP A 30 day subscription is @ShowVar[SpankzChoirShopPrice] gold @Goto(EnterCode)
 
 (h1)
 @NullResponse @Flag(Glitter3Bought) @Goto(SoldOut)
