@@ -1,12 +1,21 @@
 Welcome!
 Welcome back!
 breezy welcome
+Welcome #SlaveName
+Welcome #SubName
+Hello
+Hola
+buenos días!
 Yes?
 Yes?
 Yes?
 Yes?
 Yes?
 Yes?
+Hmm?
+Hmm?
+Hmm?
+Hmm?
 Hmm?
 Hmm?
 Hmm?
@@ -40,3 +49,35 @@ Hey, You have @ShowVar[GNMGold] gold. Take a look in the shop what you can buy.
 I will response faster when you type "fast mode"
 Hey, Please only save your progress bye typing save when you don't run in an error since the last save. To get back to the last saved state reset the session.
 Nice to have you back.
+I have already searched for you
+I miss you
+#GreetSub
+Nice day for a session. :)
+:)
+:D
+As often as you visit me, I have to mean a lot to you
+As often as you visit me, you have to love me.
+You are my little stalker
+I hope you enjoy the time without me
+Maybe you should visit the dungeon
+Maybe you should do a chore
+Maybe you should do a fitness exercise
+I think it is time to learn a little bit go into the work mode!
+Why are you sitting in front of your Computer? shut it down and take a walk in the nature!
+@Flag(ShopPricesSet) @TempFlag(TreasureChestShopPriceOffer) @ChangeVar[Temp]=[TreasureChestShopPriceOriginal]/[2] @ChangeVar[TreasureChestShopPrice]=[TreasureChestShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Treasure Chest cost only @ShowVar[TreasureChestShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(PayTributeShopPriceOffer) @ChangeVar[Temp]=[PayTributeShopPriceOriginal]/[2] @ChangeVar[PayTributeShopPrice]=[PayTributeShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the PayTribute cost only @ShowVar[PayTributeShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(DoublePayTributeShopPriceOffer) @ChangeVar[Temp]=[DoublePayTributeShopPriceOriginal]/[2] @ChangeVar[DoublePayTributeShopPrice]=[DoublePayTributeShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the DoublePayTribute cost only @ShowVar[DoublePayTributeShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(MoodboosterShopPriceOffer) @ChangeVar[Temp]=[MoodboosterShopPriceOriginal]/[2] @ChangeVar[MoodboosterShopPrice]=[MoodboosterShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Moodbooster cost only @ShowVar[MoodboosterShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(AtonementShopPriceOffer) @ChangeVar[Temp]=[AtonementShopPriceOriginal]/[2] @ChangeVar[AtonementShopPrice]=[AtonementShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Atonement cost only @ShowVar[AtonementShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(UnlockDenailShopPriceOffer) @ChangeVar[Temp]=[UnlockDenailShopPriceOriginal]/[2] @ChangeVar[UnlockDenailShopPrice]=[UnlockDenailShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the UnlockDenail cost only @ShowVar[UnlockDenailShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(ChastityPackShopPriceOffer) @ChangeVar[Temp]=[ChastityPackShopPriceOriginal]/[2] @ChangeVar[ChastityPackShopPrice]=[ChastityPackShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Chastity Pack cost only @ShowVar[ChastityPackShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(HumilationPackShopPriceOffer) @ChangeVar[Temp]=[HumilationPackShopPriceOriginal]/[2] @ChangeVar[HumilationPackShopPrice]=[HumilationPackShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Humilation Pack cost only @ShowVar[HumilationPackShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(PainPackShopPriceOffer) @ChangeVar[Temp]=[PainPackShopPriceOriginal]/[2] @ChangeVar[PainPackShopPrice]=[PainPackShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Pain Pack cost only @ShowVar[PainPackShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(SlavePackShopPriceOffer) @ChangeVar[Temp]=[SlavePackShopPriceOriginal]/[2] @ChangeVar[SlavePackShopPrice]=[SlavePackShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Slave Pack cost only @ShowVar[SlavePackShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(TeasePackShopPriceOffer) @ChangeVar[Temp]=[TeasePackShopPriceOriginal]/[2] @ChangeVar[TeasePackShopPrice]=[TeasePackShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Tease Pack cost only @ShowVar[TeasePackShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(LotteryTicketShopPriceOffer) @ChangeVar[Temp]=[LotteryTicketShopPriceOriginal]/[2] @ChangeVar[LotteryTicketShopPrice]=[LotteryTicketShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Lottery Ticket cost only @ShowVar[LotteryTicketShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(ChorePackShopPriceOffer) @ChangeVar[Temp]=[ChorePackShopPriceOriginal]/[2] @ChangeVar[ChorePackShopPrice]=[ChorePackShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Chore Pack cost only @ShowVar[ChorePackShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(EndGamesPackShopPriceOffer) @ChangeVar[Temp]=[EndGamesPackShopPriceOriginal]/[2] @ChangeVar[EndGamesPackShopPrice]=[EndGamesPackShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the EndGames Pack cost only @ShowVar[EndGamesPackShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(SpankingImplementPackShopPriceOffer) @ChangeVar[Temp]=[SpankingImplementPackShopPriceOriginal]/[2] @ChangeVar[SpankingImplementPackShopPrice]=[SpankingImplementPackShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Spanking Implement Pack cost only @ShowVar[SpankingImplementPackShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(SpankzChoirShopPriceOffer) @ChangeVar[Temp]=[SpankzChoirShopPriceOriginal]/[2] @ChangeVar[SpankzChoirShopPrice]=[SpankzChoirShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the SpankzChoir subscription cost only @ShowVar[SpankzChoirShopPrice] gold today.
+@Flag(ShopPricesSet) @TempFlag(GlitterModuleShopPriceOffer) @ChangeVar[Temp]=[GlitterModuleShopPriceOriginal]/[2] @ChangeVar[GlitterModuleShopPrice]=[GlitterModuleShopPriceOriginal]-[#Random(1,#Var[Temp])] We have a special offer in the Shop the Glitter Module cost only @ShowVar[GlitterModuleShopPrice] gold today.
