@@ -28,7 +28,7 @@
 @AcceptAnswer @NullResponse @Goto(Confused)
 @NullResponse @Goto(StateCheck)
 (Confused)
-@RTOn @SystemMessage #VANC #VANP You have the following options #SlaveName
+@RTOn @LockImages @SystemMessage #VANC #VANP You have the following options #SlaveName
 @SystemMessage #VANC #VANP Request a session with your #DomHonorific
 @SystemMessage #VANC #VANP Request a chore
 @SystemMessage #VANC #VANP Enter the dungeon
@@ -40,7 +40,7 @@
 @SystemMessage #VANC #VANP Request to view the rules 
 @SystemMessage #VANC #VANP View the pinboard
 @SystemMessage #VANC #VANP Enable fast answer mode() (I will respond quicker)
-@SystemMessage #VANC #VANP Or save and leave the Programm @RTOff @Goto(Base)
+@SystemMessage #VANC #VANP Or save and leave the Programm @RTOff @UnlockImage @Goto(Base)
 (ReportE)
 @NullResponse @Variable[ExerciseTimes]<=[0] @Goto(FirstExercise)
 @Variable[#DateDifference(JustE, Hours)]<[10] @SystemMessage #VANC #VANP You just reported that you completed an exericse.. @Goto(NotStupid)
