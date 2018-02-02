@@ -4,10 +4,10 @@ It's time for your first stroke training #DT
 Cock'xercise you might call it #GNMLol #DT
 Well! #DT
 It's rather simple #DT
-Everytime you'll start with a warmup that ends with you edging once #DT
+Every time you'll start with a warm up that ends with you edging once #DT
 You'll then be reminded about some of the few key words to use in different situations #DT
 You have 3 "lives" #DT
-So the first time you edge while training you'll say "first edge" and lose one life #DT
+So the first time you edge while training, the warm up edge doesn't count, you'll say "first edge" and lose one life #DT
 The next time you edge you say "second edge" and lose another life #DT
 And when you edge a third time you'll simply say "stop" and the training is over #DT
 After each edge you are given a short break #DT
@@ -18,16 +18,15 @@ You will end at a certain level ranging from 1-50 #DT
 You'll of course start at level 1 today #DT
 The goal is simple to reach the highest level possible #DT
 If you dream about being anything else than a houseslave I suggest you aim for level 50 #GNMLol #DT
-The beat patterns will also increase in difficuilty #DT
+The beat patterns will also increase in difficulty #DT
 It requires some series stamina to go above level 40 #DT
-After each training session you are reduced 5 levels unless you're below level 10.. #DT
-So lets stop wasting time and just get you started #GNMGrin #DT @Goto(WarmUp)
+After each training session you are reduced 5 levels unless you're below level 10.. #DT @Goto(Remember)
 (FirstStrokeTraining)
 It's time for your stroke training #GNMGrin #DT
+(Remember)
 Remember #SlaveName to say: #DT
-"First edge" when you edge the first time #DT
-Only say "First edge" <i>after</i> the warm up.. #DT
-The first edge is simply to complete the warm up.. #DT
+"edge" to complete the warm up edge.. #DT 
+"First edge" when you edge the first time <i>after</i> the warm up edge..#DT
 "Second edge" when you edge the second time #DT
 "Stop" when you reach the third and final edge.. #DT
 Now let's warm you up a little...  #DT
@@ -41,7 +40,6 @@ When you hear the pace you stroke it to the beat #DT
 @NullResponse @ShowImage @Wait(5)
 @NullResponse @ShowImage @Wait(5)
 @NullResponse @ShowImage @Wait(5)
-#StopStroking #DT
 #GNMEdge @EdgeNoHold @ShowImage
 #GNMLetTheEdgeFade #DT @ChangeVar[EdgeCount]=[EdgeCount]+[1] @Wait(#Random(3,7))
 @NullResponse @CustomMode(first edge, Goto, FirstEdge) @SetVar[TimeToIncreaseLevel]=[0]
